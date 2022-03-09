@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': 'cmsimde_site \n test123', 'tags': '', 'url': 'About.html'}]};
+var tipuesearch = {"pages": [{'title': 'About', 'text': 'cmsimde_site \n test123 \n', 'tags': '', 'url': 'About.html'}, {'title': 'Note', 'text': '', 'tags': '', 'url': 'Note.html'}, {'title': '建立倉儲', 'text': '從課程網頁中提供的連結進去 \n \n \n \n \n 複製網址 Import repository \n \n \n 即可建立倉儲 \n', 'tags': '', 'url': '建立倉儲.html'}]};
