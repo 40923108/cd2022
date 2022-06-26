@@ -664,17 +664,17 @@ var winkVideoData = {
 };
 </script>
 <div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="540" width="960">
-<source src="/downloads/online test-1.mp4" type="video/mp4"/></video>
+<source src="/downloads/online test-1.mp4" type="video/mp4"/>
+</video>
 <div class="winkVideoOverlayClass"></div>
 <div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
 <div class="winkVideoControlBarProgressLeftClass"></div>
 <div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"><hr/></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
 </div>
+<div class="winkVideoPlayOverlayClass"></div>
 </div>
 <p>2.已知左側 uarm 前方的紅色方塊頂端中心座標值為 (0.2, 0.4, 0.1), 請列出運算式說明左側 uarm 機械手臂的 joint1, joint2 與 joint3 該如何旋轉才能讓 end effector 的吸盤末端中心點移動至紅色方塊頂端中心?</p>
 <p>Ans：<span>joint1順時針10度，joint2逆</span><span>時針28度調整，joint3<span>順時針32度就可以接近紅色方塊的中心。</span></span></p>
@@ -682,8 +682,7 @@ var winkVideoData = {
 <p><span>joint1：u</span>為逆時針，i<span>為順時針</span></p>
 <p><span>joint2：t<span>為逆時針，y</span><span>為順時針</span></span></p>
 <p><span>joint3：e<span>為逆時針，r</span><span>為順時針</span></span></p>
-<p><span><span><img alt="" height="478" src="/images/code2.png" width="850"/></span></span></p>
-<h3>Visualization Stream</h3>
+<p><span><span><img alt="" height="478" src="/images/code2.png" width="850"/></span></span></p><h3>Visualization Stream</h3>
 <p><span>利用 OpenCV 結合 Flask 將模擬場景中的 Vision Sensor 影像串流至使用者的瀏覽器端，並透過 Python Remote API 控制伺服器場景與實體機電系統中的制動元件， 可讓使用者透過網際介面觀看並操控遠端場景中的幾何物件。</span></p>
 <p><span>任務步驟：</span></p>
 <ol>
@@ -727,7 +726,32 @@ var winkVideoData = {
 <p><img alt="" height="478" src="/images/uarm f2.png" width="850"/><br/><span></span></p>
 <hr/>
 <p><strong><span style="background-color: #ccffff;">任務二：</span></strong></p>
-<p>比照舊的零件檔案做些微更改，即可完成。</p>
+<p>對老師原先給的零件檔案加以更改，即可完成。</p>
+<p><span>front joint：</span></p>
+<script>
+var winkVideoData = {
+  dataVersion: 1,
+  frameRate: 20,
+  buttonFrameLength: 10,
+  buttonFrameOffset: 5,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="540" width="960">
+<source src="/downloads/期末考 前方關節.mp4" type="video/mp4"/>
+</video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p><span></span></p>
 <hr/>
 <p><strong><span style="background-color: #ccffff;">任務三：</span></strong></p>
 <p>與組員們透過teams會議，由<span style="color: #ff0000;">40923101</span>分享畫面並教導組員們操控並測試題目所要求的用<span>XML UI slider控制功能uArm機械手臂，大家也可以用分享螢幕畫面的功能互相討論、教學、透過錄影的功能將會議過程記錄下來，這種方式是一個很棒的學習經驗，也可快速領悟 !</span></p>
